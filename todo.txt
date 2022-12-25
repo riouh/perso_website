@@ -1,0 +1,7 @@
+- version code with git
+- Github actions : npm test & test format + npm un build and send content to s3 bucket (iam user for github action with only rights to push to s3)
+- Favicon and page header
+- Content of resume
+- Better pictures
+- improve styling of navigation system
+- version code in github

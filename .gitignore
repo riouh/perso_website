@@ -1,0 +1,7 @@
+front/.svelte-kit
+front/node_modules
+front/build
+
+deploy/.terraform
+deploy/terraform.tfstate
+deploy/terraform.tfstate.backup

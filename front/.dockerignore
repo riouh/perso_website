@@ -1,0 +1,8 @@
+node_modules
+build
+.idea
+.prettierignore
+.prettierrc
+.gitignore
+.eslintignore
+.eslintrc.cjs
