@@ -1,7 +1,7 @@
-- version code with git
-- Github actions : npm test & test format + npm un build and send content to s3 bucket (iam user for github action with only rights to push to s3)
-- Favicon and page header
+- Add README.md : the steps to deploy
 - Content of resume
-- Better pictures
-- improve styling of navigation system
-- version code in github
+- sliding transition when opening/closing sidebar menu on mobile screens
+- Favicon
+- Better pictures (SVGs)
+- Store tfstate on S3 and add terraform init/build in GitHub Actions (https://awstip.com/terraform-state-in-aws-s3-bucket-76882203f002)
+- Add logo for pro/edu exp

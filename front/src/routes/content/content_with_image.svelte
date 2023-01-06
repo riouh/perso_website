@@ -4,7 +4,7 @@
 	export let content_with_image_props: ContentWithImageProps;
 </script>
 
-<div class="mb-3">{content_with_image_props.top_content}</div>
+<div class="mb-3">{@html content_with_image_props.top_content}</div>
 <div class="d-flex flex-row">
 	<img
 		src={`./${content_with_image_props.image_file_name}`}
@@ -13,5 +13,5 @@
 		alt={content_with_image_props.image_file_name}
 	/>
 
-	<div class="ms-3">{content_with_image_props.image_content}</div>
+	<div class="ms-3">{@html content_with_image_props.image_content}</div>
 </div>

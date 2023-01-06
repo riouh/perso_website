@@ -18,7 +18,7 @@
 		<ul>
 			{#each exp.tasks as task}
 				<li>
-					{task}
+					{@html task}
 				</li>
 			{/each}
 		</ul>

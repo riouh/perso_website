@@ -1,3 +1,0 @@
-[profile user]
-region=us-east-1
-output=json
