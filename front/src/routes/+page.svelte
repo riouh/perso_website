@@ -44,7 +44,7 @@
 				new Skill({ name: 'GraphQL APIs', level: 80 }),
 				new Skill({ name: 'Linux/Bash', level: 70 }),
 				new Skill({ name: 'Docker', level: 90 }),
-				new Skill({ name: 'HTML/CSS', level: 100 }),
+				new Skill({ name: 'HTML/CSS', level: 100 })
 			]
 		},
 		{
@@ -58,7 +58,7 @@
 					tasks: [
 						`Main fullstack developper on the flagship product, an EMS platform designed to 
 						help Energy professionals mitigate operational and financial risks while operating their assets, 
-						by giving them the ability to monitor, analyze and optimize their portfolio.`, 
+						by giving them the ability to monitor, analyze and optimize their portfolio.`,
 						`Typical tasks include for example: 
 						<ul><li>REST and GraphQL APIs development</li> 
 							<li>Database design and management</li> 
@@ -76,24 +76,28 @@
 					title: 'HelloFresh - Full stack Intern',
 					place: 'Sydney, Australia (NSW)',
 					date: 'Jan, 2019 - July 2019 (6 months)',
-					tasks: [`Owner and manager of an in-house ETL.`, `Full-stack development, Feature creation and improvement both on
+					tasks: [
+						`Owner and manager of an in-house ETL.`,
+						`Full-stack development, Feature creation and improvement both on
 front and back ends. (Python, VueJS, PostgreSql, AWS, Docker).`,
-`Responsible for the full database restructuration. Coordination with all the database's clients.`,
-`Example of feature development: Automatic email sending, forecasts and
+						`Responsible for the full database restructuration. Coordination with all the database's clients.`,
+						`Example of feature development: Automatic email sending, forecasts and
 discrepancies visualisation, automatic customer complaints management.`
-
 					]
 				},
 				{
 					title: 'Procter & Gamble - Logistics Data Intern',
 					place: 'Paris, France',
 					date: 'Apr, 2018 - Sept 2018 (6 months)',
-					tasks: [`Data processes automation within the logistics master-data team (Python Selenium, SAP scripting, VBA, Knime).`,
-					`E.g: Automation of the promotional data transfer between two softwares.
-Workload saving of 6h/week.`, `Change management and collaborators training on implemented automation
-tools.`, `Shared resources creation for the whole Logistics Service, aiming at auto-training
+					tasks: [
+						`Data processes automation within the logistics master-data team (Python Selenium, SAP scripting, VBA, Knime).`,
+						`E.g: Automation of the promotional data transfer between two softwares.
+Workload saving of 6h/week.`,
+						`Change management and collaborators training on implemented automation
+tools.`,
+						`Shared resources creation for the whole Logistics Service, aiming at auto-training
 in automation (KNIME, SAP Scripting, Python and Shell tutorials).`
-				]
+					]
 				}
 			]
 		},
@@ -106,7 +110,7 @@ in automation (KNIME, SAP Scripting, Python and Shell tutorials).`
 					place: 'UCL, London, UK',
 					date: 'September 2019 - September, 2020',
 					tasks: [
-						'Graduated with distinctions', 
+						'Graduated with distinctions',
 						`Main subjects:
 						<ul>
 							<li>Statistics and econometry</li>
@@ -128,7 +132,8 @@ PV, wind).`
 					title: 'General Engineering',
 					place: 'Centrale Nantes, Nantes, France',
 					date: 'September 2016 - August 2019',
-					tasks: [`Main subjects: 
+					tasks: [
+						`Main subjects: 
 						<ul>
 							<li>Computer Science</li>
 							<li>Solid & Fluid Mechanics</li>
@@ -137,21 +142,24 @@ PV, wind).`
 							<li>Economy, finance, project management</li>
 							<li>Automatisation</li>
 						</ul>
-					`, 
-					`Specialization in Industrial engineering`, 
-					`Involved in student associations: 
+					`,
+						`Specialization in Industrial engineering`,
+						`Involved in student associations: 
 					<ul>
 							<li>Student Union - Partnership manager</li>
 							<li>School prom night - Logistics manager</li>
 							<li>Humanitarian association - Building team</li>
 						</ul>
-					`]
+					`
+					]
 				},
 				{
 					title: 'Preparatory class',
 					place: 'Lycée Clemenceau, Nantes, France',
 					date: 'September 2014 - July 2016',
-					tasks: ['Intensive courses in mathematics, physics and chemistry for competitive exam to enter french engineering schools.']
+					tasks: [
+						'Intensive courses in mathematics, physics and chemistry for competitive exam to enter french engineering schools.'
+					]
 				}
 			]
 		},
