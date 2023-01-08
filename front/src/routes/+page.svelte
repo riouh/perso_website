@@ -12,15 +12,12 @@
 			content: {
 				top_content: `<ul>
 					<li>Proficient full-stack developer with experience in languages such as Python, Node and frameworks such as React and SvelteJS.</li>
-					<li>Background in database design and management.</li>
+					<li>Experience in database design and management.</li>
 					<li>Excellent communicator with a special talent for explaining and teaching technical concepts.</li>
-					</ul>
-`,
-				image_content: `<ul>
-					<li>Already managed other developers using the Agile method.</li>
+					<li>Experience in managing other developers within Agile frameworks.</li>
 					<li>Passionate about using technology and data to solve problems, particularly in the fields of energy and the environment.</li>
 					<li>Highly organized, able to prioritize and manage multiple tasks and projects effectively.</li>
-				</ul>`,
+					</ul>`,
 				image_file_name: 'hugo_cv_picture.jpeg',
 				image_size: 200
 			}

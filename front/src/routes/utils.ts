@@ -60,7 +60,7 @@ export function transformArrayToArrayOfTuples<T>(array: T[], n_cols = 2): Transf
 
 export interface ContentWithImageProps {
 	top_content: string;
-	image_content: string;
+	image_content?: string;
 	image_file_name: string;
 	image_size: number;
 }
@@ -75,7 +75,6 @@ export function isContentWithImageProps(content: AnyContentType): content is Con
 	if (content instanceof Array) return false;
 	return (
 		content.hasOwnProperty('top_content') &&
-		content.hasOwnProperty('image_content') &&
 		content.hasOwnProperty('image_file_name') &&
 		content.hasOwnProperty('image_size')
 	);
