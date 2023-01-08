@@ -4,31 +4,57 @@
 	import Hamburger from './hamburger.svelte';
 	import type { Content } from '../utils';
 	import { isMobileStore, classStore, sidebarOpened } from '../stores';
+	import { fly } from 'svelte/transition';
+	import { linear } from 'svelte/easing';
 
 	export let contents: Content[];
 </script>
 
-<div id="sidebar-wrapper" class={$classStore.sidebar_wrapper($sidebarOpened)}>
-	{#if $isMobileStore && $sidebarOpened}
+{#if $isMobileStore && $sidebarOpened}
+	<div
+		id="sidebar-wrapper"
+		class={$classStore.sidebar_wrapper(true)}
+		in:fly={{ duration: 200, easing: linear, opacity: 100, x: -700 }}
+		out:fly={{ duration: 200, opacity: 100, easing: linear, x: -700 }}
+	>
 		<div class="hamburger-opened">
 			<Hamburger />
 		</div>
-	{/if}
-	<div class="d-flex flex-column justify-content-center align-items-center">
-		<img
-			src="./hugo_cv_picture.jpeg"
-			alt=""
-			class="img-fluid rounded-circle py-4"
-			style="width: 80%; pading: 20px; max-width: 150px"
-		/>
-		<h1 class="text-light text-center">
-			<a href="index.html" style="text-decoration: none; color: white; font-size: 24px">Hugo Riou</a
-			>
-		</h1>
-		<SocialLinks />
-		<SidebarContent {contents} />
+		<div class="d-flex flex-column justify-content-center align-items-center">
+			<img
+				src="./hugo_cv_picture.jpeg"
+				alt=""
+				class="img-fluid rounded-circle py-4"
+				style="width: 80%; pading: 20px; max-width: 150px"
+			/>
+			<h1 class="text-light text-center">
+				<a href="index.html" style="text-decoration: none; color: white; font-size: 24px"
+					>Hugo Riou</a
+				>
+			</h1>
+			<SocialLinks />
+			<SidebarContent {contents} />
+		</div>
 	</div>
-</div>
+{:else}
+	<div id="sidebar-wrapper" class={$classStore.sidebar_wrapper($sidebarOpened)}>
+		<div class="d-flex flex-column justify-content-center align-items-center">
+			<img
+				src="./hugo_cv_picture.jpeg"
+				alt=""
+				class="img-fluid rounded-circle py-4"
+				style="width: 80%; pading: 20px; max-width: 150px"
+			/>
+			<h1 class="text-light text-center">
+				<a href="index.html" style="text-decoration: none; color: white; font-size: 24px"
+					>Hugo Riou</a
+				>
+			</h1>
+			<SocialLinks />
+			<SidebarContent {contents} />
+		</div>
+	</div>
+{/if}
 {#if $isMobileStore && !$sidebarOpened}
 	<div class="hamburger-closed">
 		<Hamburger />
