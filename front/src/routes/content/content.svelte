@@ -2,6 +2,7 @@
 	import {
 		isContentArrayOfExperiences,
 		isContentInterest,
+		isContentContact,
 		isContentArrayOfSkills,
 		isContentWithImageProps
 	} from '../utils';
@@ -9,6 +10,7 @@
 	import ContentChronological from './content_chronological.svelte';
 	import ContentWithImage from './content_with_image.svelte';
 	import ContentWithInterests from './content_interests.svelte';
+	import ContentContact from './content_contact.svelte';
 	import type { Content } from '../utils';
 
 	export let content: Content;
@@ -22,4 +24,6 @@
 	<ContentWithImage content_with_image_props={content.content} />
 {:else if isContentInterest(content.content)}
 	<ContentWithInterests interests={content.content} />
+{:else if isContentContact(content.content)}
+	<ContentContact content_contacts={content.content} />
 {/if}

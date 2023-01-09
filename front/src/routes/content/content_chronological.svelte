@@ -8,13 +8,26 @@
 
 {#each professional_experiences as exp}
 	<div class="resume-item">
-		<h4>{exp.title}</h4>
-		<h5>{exp.date}</h5>
-		<p>
-			<Icon scale={2} data={mapMarker} style="color: #FF0000; padding-right: 5px" /><em
-				>{exp.place}</em
-			>
-		</p>
+		<div class="d-flex flex-row justify-content-between">
+			<div>
+				<h4>{exp.title}</h4>
+				<h5>{exp.date}</h5>
+				<p>
+					<Icon scale={2} data={mapMarker} style="color: #FF0000; padding-right: 5px" /><em
+						>{exp.place}</em
+					>
+				</p>
+			</div>
+			{#if exp?.logo != undefined}
+				<img
+					src={exp.logo}
+					alt=""
+					class="img-fluid"
+					style="pading: 20px; max-width: 150px; height: auto; object-fit: contain; max-height: 100px"
+				/>
+			{/if}
+		</div>
+
 		<ul>
 			{#each exp.tasks as task}
 				<li>

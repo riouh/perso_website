@@ -1,7 +1,16 @@
 <script lang="ts">
 	import { Skill } from './utils';
 	import type { Content } from './utils';
-	import { fileText, cog, graduationCap, userCircleO, tree } from 'svelte-awesome/icons';
+	import {
+		fileText,
+		cog,
+		graduationCap,
+		userCircleO,
+		tree,
+		envelopeO,
+		mapMarker,
+		phone
+	} from 'svelte-awesome/icons';
 	import PageContent from './content/page_content.svelte';
 	import Sidebar from './sidebar/sidebar.svelte';
 
@@ -51,6 +60,7 @@
 				{
 					title: 'Enexflow - Senior Software Engineer',
 					place: 'Paris, France',
+					logo: './favicon_enexflow.ico',
 					date: 'September, 2020 - Today',
 					tasks: [
 						`Main fullstack developper on the flagship product, an EMS platform designed to 
@@ -72,6 +82,7 @@
 				{
 					title: 'HelloFresh - Full stack Intern',
 					place: 'Sydney, Australia (NSW)',
+					logo: './hf_logo.png',
 					date: 'Jan, 2019 - July 2019 (6 months)',
 					tasks: [
 						`Owner and manager of an in-house ETL.`,
@@ -85,6 +96,7 @@ discrepancies visualisation, automatic customer complaints management.`
 				{
 					title: 'Procter & Gamble - Logistics Data Intern',
 					place: 'Paris, France',
+					logo: './pg_logo.png',
 					date: 'Apr, 2018 - Sept 2018 (6 months)',
 					tasks: [
 						`Data processes automation within the logistics master-data team (Python Selenium, SAP scripting, VBA, Knime).`,
@@ -105,6 +117,7 @@ in automation (KNIME, SAP Scripting, Python and Shell tutorials).`
 				{
 					title: 'MSc Energy Systems & Data Analytics',
 					place: 'UCL, London, UK',
+					logo: './ucl_logo.png',
 					date: 'September 2019 - September, 2020',
 					tasks: [
 						'Graduated with distinctions',
@@ -128,6 +141,7 @@ PV, wind).`
 				{
 					title: 'General Engineering',
 					place: 'Centrale Nantes, Nantes, France',
+					logo: './ecn_logo.jpg',
 					date: 'September 2016 - August 2019',
 					tasks: [
 						`Main subjects: 
@@ -153,6 +167,7 @@ PV, wind).`
 				{
 					title: 'Preparatory class',
 					place: 'Lycée Clemenceau, Nantes, France',
+					logo: './clem_logo.png',
 					date: 'September 2014 - July 2016',
 					tasks: [
 						'Intensive courses in mathematics, physics and chemistry for competitive exam to enter french engineering schools.'
@@ -166,13 +181,22 @@ PV, wind).`
 			content: [
 				{ emoji: '🌳', interest: 'Nature' },
 				{ emoji: '🏄‍♂️', interest: 'Surf' },
-				{ emoji: '🏔️', interest: 'Mountain sports' },
-				{ emoji: '🔨', interest: 'DIY\xa0& Handcrafting' },
+				{ emoji: '🏔️', interest: 'Mountain' },
+				{ emoji: '🔨', interest: 'DIY' },
 				{ emoji: '🏊‍♂️', interest: 'Swimming' },
 				{ emoji: '⛵', interest: 'Sailing' },
 				{ emoji: '🎸', interest: 'Guitare' },
 				{ emoji: '💻', interest: 'Technologies' },
 				{ emoji: '🔬', interest: 'Science' }
+			]
+		},
+		{
+			name: 'Contact',
+			icon: envelopeO,
+			content: [
+				{ icon: envelopeO, title: 'Email', value: 'riou.hugo56@gmail.com' },
+				{ icon: phone, title: 'Phone', value: '+33 6 40 95 84 72' },
+				{ icon: mapMarker, title: 'Location', value: 'Paris' }
 			]
 		}
 	];

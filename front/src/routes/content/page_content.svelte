@@ -9,7 +9,7 @@
 <div class={$classStore.page_content_wrapper}>
 	<div class="intro" content="width=device-width;">
 		<div style="height: 100vh;" class="d-flex align-items-center justify-content-center">
-			<h1 class="p-3 m-5 bd-highlight text-center">Welcome to my Resume-Website!</h1>
+			<h1 class="p-3 m-5 bd-highlight text-center">Welcome to my Web-Resume!</h1>
 		</div>
 		<div class={$classStore.content_class}>
 			<Contents {contents} />

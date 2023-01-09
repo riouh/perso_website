@@ -5,13 +5,17 @@ type Icon =
 	| typeof all.cog
 	| typeof all.graduationCap
 	| typeof all.userCircleO
-	| typeof all.tree;
+	| typeof all.tree
+	| typeof all.envelopeO
+	| typeof all.mapMarker
+	| typeof all.phone;
 
 export interface ProfessionalExperiences {
 	title: string;
 	date: string;
 	place: string;
 	tasks: string[];
+	logo?: string;
 }
 
 export class Skill {
@@ -65,11 +69,31 @@ export interface ContentWithImageProps {
 	image_size: number;
 }
 
+export interface ContentContact {
+	icon: Icon;
+	title: string;
+	value: string;
+}
+
 export type AnyContentType =
 	| ContentWithImageProps
 	| Skill[]
 	| ProfessionalExperiences[]
-	| Interest[];
+	| Interest[]
+	| ContentContact[];
+
+export function isContentContact(content: AnyContentType): content is ContentContact[] {
+	if (content instanceof Array) {
+		const firstElem = content[0];
+		if (firstElem == undefined) return true;
+		return (
+			firstElem.hasOwnProperty('icon') &&
+			firstElem.hasOwnProperty('title') &&
+			firstElem.hasOwnProperty('value')
+		);
+	}
+	return false;
+}
 
 export function isContentWithImageProps(content: AnyContentType): content is ContentWithImageProps {
 	if (content instanceof Array) return false;
@@ -115,7 +139,7 @@ export function isContentInterest(content: AnyContentType): content is Interest[
 }
 
 export interface Content {
-	name: 'About' | 'Skills' | 'Experiences' | 'Education' | 'Interests';
+	name: 'About' | 'Skills' | 'Experiences' | 'Education' | 'Interests' | 'Contact';
 	icon: Icon;
 	content: AnyContentType;
 }

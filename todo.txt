@@ -1,5 +1,4 @@
 - Content of resume
 - Favicon
 - Better pictures (SVGs)
-- Add logo for pro/edu exp
 - contact section
