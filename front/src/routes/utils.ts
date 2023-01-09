@@ -16,6 +16,7 @@ export interface ProfessionalExperiences {
 	place: string;
 	tasks: string[];
 	logo?: string;
+	subtitle?: string;
 }
 
 export class Skill {

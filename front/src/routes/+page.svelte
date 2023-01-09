@@ -58,7 +58,8 @@
 			icon: fileText,
 			content: [
 				{
-					title: 'Enexflow - Senior Software Engineer',
+					title: 'Enexflow',
+					subtitle: 'Senior Software Engineer',
 					place: 'Paris, France',
 					logo: './favicon_enexflow.ico',
 					date: 'September, 2020 - Today',
@@ -80,10 +81,11 @@
 					]
 				},
 				{
-					title: 'HelloFresh - Full stack Intern',
+					title: 'HelloFresh',
+					subtitle: 'Full stack Intern',
 					place: 'Sydney, Australia (NSW)',
 					logo: './hf_logo.png',
-					date: 'Jan, 2019 - July 2019 (6 months)',
+					date: 'Jan, 2019 - July 2019',
 					tasks: [
 						`Owner and manager of an in-house ETL.`,
 						`Full-stack development, Feature creation and improvement both on
@@ -94,10 +96,11 @@ discrepancies visualisation, automatic customer complaints management.`
 					]
 				},
 				{
-					title: 'Procter & Gamble - Logistics Data Intern',
+					title: 'Procter & Gamble',
+					subtitle: 'Logistics Data Intern',
 					place: 'Paris, France',
 					logo: './pg_logo.png',
-					date: 'Apr, 2018 - Sept 2018 (6 months)',
+					date: 'Apr, 2018 - Sept 2018',
 					tasks: [
 						`Data processes automation within the logistics master-data team (Python Selenium, SAP scripting, VBA, Knime).`,
 						`E.g: Automation of the promotional data transfer between two softwares.
@@ -115,7 +118,7 @@ in automation (KNIME, SAP Scripting, Python and Shell tutorials).`
 			icon: graduationCap,
 			content: [
 				{
-					title: 'MSc Energy Systems & Data Analytics',
+					title: 'MSc Energy Systems\xa0 & Data Analytics',
 					place: 'UCL, London, UK',
 					logo: './ucl_logo.png',
 					date: 'September 2019 - September, 2020',
