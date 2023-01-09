@@ -1,4 +1,3 @@
 - Content of resume
 - Favicon
 - Better pictures (SVGs)
-- contact section
