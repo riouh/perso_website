@@ -2,6 +2,7 @@
 	import type { Content } from '../utils';
 	import { isMobileStore, section_store, sidebarOpened } from '../stores';
 	import { Icon } from 'svelte-awesome';
+	import { download } from 'svelte-awesome/icons';
 
 	export let contents: Content[];
 
@@ -37,6 +38,21 @@
 				</a>
 			</li>
 		{/each}
+		<li class="m-4">
+			<a
+				href="/"
+				class="nav-link scrollto active"
+				style="display: table"
+				on:click|preventDefault={() => {
+					if (typeof window != 'undefined') window.open('CV.pdf');
+				}}
+			>
+				<Icon data={download} />
+				<span style="display:table-cell; vertical-align:middle; padding-left: 20px"
+					>PDF Version</span
+				>
+			</a>
+		</li>
 	</ul>
 </nav>
 

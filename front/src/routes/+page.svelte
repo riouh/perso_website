@@ -19,14 +19,12 @@
 			name: 'About',
 			icon: userCircleO,
 			content: {
-				top_content: `<ul>
-					<li>Proficient full-stack developer with experience in languages such as Python, Node and frameworks such as React and SvelteJS.</li>
-					<li>Experience in database design and management.</li>
-					<li>Excellent communicator with a special talent for explaining and teaching technical concepts.</li>
-					<li>Experience in managing other developers within Agile frameworks.</li>
-					<li>Passionate about using technology and data to solve problems, particularly in the fields of energy and the environment.</li>
-					<li>Highly organized, able to prioritize and manage multiple tasks and projects effectively.</li>
-					</ul>`,
+				top_content: `
+				Proficient Full Stack Engineer with a particular appetite for data related subjects, 
+				passionate about using technology to solve challenging problems. 
+				I am a curious developper with proven communication and organisational skills.
+					Looking for an exciting position where making the most impact would be the primary philosophy.
+				`,
 				image_file_name: 'hugo_cv_picture.jpeg',
 				image_size: 200
 			}
@@ -65,8 +63,8 @@
 					date: 'September, 2020 - Today',
 					tasks: [
 						`Main fullstack developper on the flagship product, an EMS platform designed to 
-						help Energy professionals mitigate operational and financial risks while operating their assets, 
-						by giving them the ability to monitor, analyze and optimize their portfolio.`,
+						help Energy professionals mitigate operational and financial risks in their assets' operations, 
+						by letting them monitor, analyze and optimize their portfolio.`,
 						`Typical tasks include for example: 
 						<ul><li>REST and GraphQL APIs development</li> 
 							<li>Database design and management</li> 
@@ -77,7 +75,8 @@
 							<li>Test implementation & automation (Mocha, Pytest, Selenium)</li>
 						</ul>`,
 						'Managed up to 2/3 interns',
-						'Organised a recurrent conference to vulgarize tech subjects for all teams'
+						'Organised a recurrent conference to vulgarize tech subjects for all teams',
+						'Actively took part in recruting'
 					]
 				},
 				{
@@ -87,7 +86,7 @@
 					logo: './hf_logo.png',
 					date: 'Jan, 2019 - July 2019',
 					tasks: [
-						`Owner and manager of an in-house ETL.`,
+						`Owner and manager of a custom ETL.`,
 						`Full-stack development, Feature creation and improvement both on
 front and back ends. (Python, VueJS, PostgreSql, AWS, Docker).`,
 						`Responsible for the full database restructuration. Coordination with all the database's clients.`,
@@ -102,13 +101,13 @@ discrepancies visualisation, automatic customer complaints management.`
 					logo: './pg_logo.png',
 					date: 'Apr, 2018 - Sept 2018',
 					tasks: [
-						`Data processes automation within the logistics master-data team (Python Selenium, SAP scripting, VBA, Knime).`,
+						`Data processes automation within the logistics master-data team (Python Selenium, SAP scripting, VBA, Knime, Shell).`,
 						`E.g: Automation of the promotional data transfer between two softwares.
 Workload saving of 6h/week.`,
 						`Change management and collaborators training on implemented automation
 tools.`,
 						`Shared resources creation for the whole Logistics Service, aiming at auto-training
-in automation (KNIME, SAP Scripting, Python and Shell tutorials).`
+in automation.`
 					]
 				}
 			]
@@ -154,7 +153,7 @@ PV, wind).`
 							<li>Manufacture</li>
 							<li>Thermodynamics</li>
 							<li>Economy, finance, project management</li>
-							<li>Automatisation</li>
+							<li>Electronics</li>
 						</ul>
 					`,
 						`Specialization in Industrial engineering`,
@@ -199,7 +198,7 @@ PV, wind).`
 			content: [
 				{ icon: envelopeO, title: 'Email', value: 'riou.hugo56@gmail.com' },
 				{ icon: phone, title: 'Phone', value: '+33 6 40 95 84 72' },
-				{ icon: mapMarker, title: 'Location', value: 'Paris' }
+				{ icon: mapMarker, title: 'Location', value: 'Paris 11' }
 			]
 		}
 	];
