@@ -21,7 +21,7 @@
 <nav id="navbar" class="nav-menu navbar">
 	<ul>
 		{#each contents as content}
-			<li class="m-4">
+			<li class="m-4 my-1">
 				<a
 					href={`#${content.name}`}
 					class="nav-link scrollto active"
@@ -38,7 +38,7 @@
 				</a>
 			</li>
 		{/each}
-		<li class="m-4">
+		<li class="m-4 my-1">
 			<a
 				href="/"
 				class="nav-link scrollto active"
