@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Content } from '../utils';
 	import { isMobileStore, section_store, sidebarOpened } from '../stores';
-	import { Icon } from 'svelte-awesome/index.d.ts';
+	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import { download } from 'svelte-awesome/icons';
 
 	export let contents: Content[];
