@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Icon } from 'svelte-awesome';
+	import { Icon } from 'svelte-awesome/index.d.ts';
 	import type { ContentContact } from '../utils';
 
 	export let content_contacts: ContentContact[];

@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@fortawesome/free-regular-svg-icons": "^5.15.4",
 		"bootstrap": "^5.2.3",
-		"svelte-awesome": "^3.0.1",
+		"svelte-awesome": "^3.3.5",
 		"sveltestrap": "^5.10.0"
 	}
 }

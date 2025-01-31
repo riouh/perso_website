@@ -1,2 +1,2 @@
 aws_region = "us-east-1"
-domain_name = "hriou.online"
+domain_name = "hriou.dev"

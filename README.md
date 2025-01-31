@@ -42,7 +42,7 @@ terraform init
 terraform apply
 `
 
-Then, any changes you make will be applied automatically thnks to the CI/CD pipeline in the GitHub Action.
+Then, any changes you make will be applied automatically thanks to the CI/CD pipeline in the GitHub Action.
 - Create a repo on GitHub where you will push your code. Add 4 secrets for GitHub Actions:
     - AWS_ACCESS_KEY_ID: access key of the githubActions user you created in AWS console 
     - AWS_SECRET_ACCESS_KEY: secret access key of the githubActions user you created in AWS console

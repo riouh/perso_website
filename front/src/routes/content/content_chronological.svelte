@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { ProfessionalExperiences } from '../utils';
-	import { Icon } from 'svelte-awesome';
+	import { Icon } from 'svelte-awesome/index.d.ts';
 	import { mapMarker } from 'svelte-awesome/icons';
 
 	export let professional_experiences: ProfessionalExperiences[];

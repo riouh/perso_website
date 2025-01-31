@@ -55,8 +55,3 @@ resource "aws_cloudfront_distribution" "prod_distribution" {
     ssl_support_method = "sni-only"
   }
 }
-
-resource "aws_cloudfront_invalidation" "invalidate_cache" {
-  distribution_id = aws_cloudfront_distribution.prod_distribution.cloudfront_distribution_id
-  paths          = var.invalidation_paths
-}

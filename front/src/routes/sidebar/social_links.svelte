@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Icon } from 'svelte-awesome';
+	import { Icon } from 'svelte-awesome/index.d.ts';
 	import linkedinSquare from 'svelte-awesome/icons/linkedinSquare';
 	import github from 'svelte-awesome/icons/github';
 </script>
